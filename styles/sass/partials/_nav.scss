@@ -1,0 +1,101 @@
+$primary:#EAFEFC;
+$secondary:#0d457f;
+$tertiary:#fdd908;
+$heading-font:'IM Fell English', serif;
+$body-font:'Roboto', sans-serif;
+.index-nav-bar{
+    display:flex;
+    padding-top:40px;
+    position:relative;
+    li{
+      a{
+        color:white;
+        padding-right:40px;
+        text-transform:uppercase;
+        font-family:$body-font;
+        font-weight:bold;
+        font-size:20px;
+        letter-spacing:1px;
+        line-height:29px;
+        text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+        
+        &:hover {
+        color: darken(white, 10)
+        }
+        &:after{
+            content:"";
+            width:55px;
+            height:3px;
+            background-color:$tertiary;
+            position:absolute;
+            border-radius:3px;
+            left:0px;
+            bottom:-7.5px;
+        }
+      }
+    }
+}
+.blog-nav-bar{
+  display:flex;
+  padding-top:40px;
+  position:relative;
+  li{
+    a{
+      color:white;
+      padding-right:40px;
+      text-transform:uppercase;
+      font-family:$body-font;
+      font-weight:bold;
+      font-size:20px;
+      letter-spacing:1px;
+      line-height:29px;
+      text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+      
+      &:hover {
+      color: darken(white, 10)
+      }
+      &:after{
+          content:"";
+          width:55px;
+          height:3px;
+          background-color:$tertiary;
+          position:absolute;
+          border-radius:3px;
+          left:210px;
+          bottom:-7.5px;
+      }
+    }
+  }
+}
+.contact-nav-bar{
+  display:flex;
+  padding-top:40px;
+  position:relative;
+  li{
+    a{
+      color:white;
+      padding-right:40px;
+      text-transform:uppercase;
+      font-family:$body-font;
+      font-weight:bold;
+      font-size:20px;
+      letter-spacing:1px;
+      line-height:29px;
+      text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+      
+      &:hover {
+      color: darken(white, 10)
+      }
+      &:after{
+          content:"";
+          width:85px;
+          height:3px;
+          background-color:$tertiary;
+          position:absolute;
+          border-radius:3px;
+          left:310px;
+          bottom:-7.5px;
+      }
+    }
+  }
+}

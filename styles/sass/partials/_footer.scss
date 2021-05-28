@@ -1,0 +1,13 @@
+$primary:#EAFEFC;
+$secondary:#0d457f;
+$tertiary:#fdd908;
+$heading-font:'IM Fell English', serif;
+$body-font:'Roboto', sans-serif;
+
+footer{
+    background-color:$tertiary;
+    .copyright p{
+        text-align: center;
+        color:$secondary;
+    }
+}

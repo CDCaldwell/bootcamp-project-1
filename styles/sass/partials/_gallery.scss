@@ -1,0 +1,11 @@
+.gallery{
+    display:flex;
+    justify-content: space-between;
+    padding-top:75px;
+    padding-bottom:75px;
+    .gallery-item{
+        width:calc(33% - 20px);
+        display:block;
+        object-fit: contain;
+    }
+}

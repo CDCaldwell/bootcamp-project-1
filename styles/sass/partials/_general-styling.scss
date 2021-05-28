@@ -1,0 +1,53 @@
+$primary:#EAFEFC;
+$secondary:#0d457f;
+$tertiary:#fdd908;
+$heading-font:'IM Fell English', serif;
+$body-font:'Roboto', sans-serif;
+
+.wrapper{
+    width:90%;
+    max-width:1250px;
+    margin: 0 auto;
+}
+
+h1{
+    color:$tertiary;
+    font-family: $heading-font;
+    font-style:italic;
+    font-size:79px;
+    text-transform: uppercase;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+h2{
+    color:$secondary;
+    font-family: $heading-font;
+    line-height:99.8px;
+    font-size:45px;
+    font-style:italic;
+    text-transform: uppercase;
+}
+p{
+    font-family: $body-font;
+    font-size:20px;
+    line-height:28px;
+    letter-spacing: 1px;
+}
+
+h3{
+    color:white;
+    font-family: $heading-font;
+    line-height:58.8px;
+    font-size:40px;
+    font-style:italic;
+    text-transform: uppercase;
+    letter-spacing:1.3px;
+}
+h4{
+    color:$tertiary;
+    font-family:$heading-font;
+    font-style:italic;
+    line-height:58px;
+    font-size:25px;
+    letter-spacing:0.8px;
+    text-transform: uppercase;
+}

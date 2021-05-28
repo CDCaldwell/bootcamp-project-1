@@ -1,0 +1,30 @@
+$primary:#EAFEFC;
+$secondary:#0d457f;
+$tertiary:#fdd908;
+$heading-font:'IM Fell English', serif;
+$body-font:'Roboto', sans-serif;
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+    header.index-header{
+        .header-text{
+            h1{
+                width:100%;
+            }
+        }
+        img{
+            width:50%;
+        }
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
+
+@media (max-width: 320px) {
+}

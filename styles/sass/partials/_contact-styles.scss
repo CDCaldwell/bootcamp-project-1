@@ -1,0 +1,152 @@
+$primary:#EAFEFC;
+$secondary:#0d457f;
+$tertiary:#fdd908;
+$heading-font:'IM Fell English', serif;
+$body-font:'Roboto', sans-serif;
+
+.contact-header{
+    height:85vh;
+    background-image: url(./assets/Boat-Ride-Adventures-final-assets/contact-header.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    h1{
+        padding-top:20vh;
+        padding-bottom:10vh;
+        color:white;
+    }
+}
+.contact-main{
+    background-color:$primary;
+    height:70vh;
+    .contact-flex-parent{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        position:relative;
+        .contact-address{
+            position:relative;
+            top:-100px;
+            .social-icons{
+                display:flex;
+                justify-content: space-between;
+                width:160px;
+                a{
+                    font-size:25px;
+                    line-height:33px;
+                    letter-spacing: 1px;
+                    color:$secondary;
+                    &:hover{
+                        color:lighten($secondary, 15);
+                    }
+                }
+            }
+            .address-content{
+                p {
+                    padding-bottom:10px;
+                    padding-top:10px;
+                
+                    a{
+                        font-family: $body-font;
+                        font-size:20px;
+                        line-height:28px;
+                        letter-spacing: 1px;
+                        color:black;
+                        padding-top:10px;
+                        padding-bottom:10px;
+                        &:hover{
+                            color:$secondary;
+                        }
+                    }
+                }
+                address{
+                    font-family: $body-font;
+                    font-size:20px;
+                    line-height:28px;
+                    letter-spacing: 1px;
+                    color:black;
+                    font-style:normal;
+                }
+            }
+        }
+        .contact-form-parent{
+            background-color:$secondary;
+            height:70vh;
+            width:70%;
+            box-shadow: 25px 25px $tertiary;
+            position:relative;
+            top:-200px;
+            form{
+                .name-and-email{
+                    display:flex;
+                    justify-content: space-between;
+                    margin-top:20%;
+                    input{
+                        border:none;
+                        background-color:$secondary;
+                        border-bottom:$tertiary 2px solid;
+                        width:50%;
+                        margin-left:50px;
+                        margin-right:40px;
+                        font-family: $body-font;
+                        font-size:20px;
+                        line-height:28px;
+                        letter-spacing: 1px;
+                        color:white;
+                        padding-left:20px;
+                        padding-bottom:10px;
+                        padding-top:10px;
+        
+                        &:active, &:focus{
+                            border-color:darken($tertiary, 5);
+                            box-shadow:none;
+                            background-color:lighten($secondary, 10);
+                            outline:none;
+                        }
+        
+                    }
+                }
+                #message-box{
+                    background-color:$secondary;
+                    border:$tertiary 2px solid;
+                    width:90%;
+                    margin:0 50px;
+                    font-family: $body-font;
+                    font-size:20px;
+                    line-height:28px;
+                    letter-spacing: 1px;
+                    color:white;
+                    height:200px;
+                    text-align:start;
+                    margin-top:20px;
+                    padding-left:20px;
+                    padding-top:20px;
+                    resize:none;
+                    &:active, &:focus{
+                        border-color:darken($tertiary, 5);
+                        box-shadow:none;
+                        background-color:lighten($secondary, 10);
+                        outline:none;
+                    }
+                }
+                button{
+                    background-color:$tertiary;
+                    color:$secondary;
+                    font-family: $heading-font;
+                    font-style:italic;
+                    line-height:40px;
+                    font-size:20px;
+                    letter-spacing:0.8px;
+                    width:90%;
+                    margin:0 50px;
+                    margin-top:20px;
+                    text-transform:uppercase;
+                    
+                    &:hover{
+                        background-color:darken($tertiary, 10)
+                    }
+                }
+            }
+            
+        }
+    }
+}

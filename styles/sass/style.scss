@@ -1,0 +1,21 @@
+@import "partials/normalize";
+
+$primary:#EAFEFC;
+$secondary:#0d457f;
+$tertiary:#fdd908;
+$heading-font:'IM Fell English', serif;
+$body-font:'Roboto', sans-serif;
+
+@import "partials/general-styling";
+@import "partials/nav";
+@import "partials/buttons";
+@import "partials/index-styles";
+@import "partials/gallery";
+@import "partials/blog-styles";
+@import "partials/contact-styles";
+@import "partials/footer";
+
+// Media Queries
+@import "partials/index-media-queries";
+@import "partials/blog-media-queries";
+@import "partials/contact-media-queries";
