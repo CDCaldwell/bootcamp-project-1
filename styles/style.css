@@ -1230,6 +1230,9 @@ footer .copyright p {
 /* Landscape phone to portrait tablet */
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  .index-nav-bar {
+    display: none;
+  }
   header.index-header .header-text h1 {
     font-size: 50px;
     width: 100%;

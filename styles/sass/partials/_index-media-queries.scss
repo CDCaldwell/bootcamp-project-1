@@ -92,6 +92,9 @@ $body-font:'Roboto', sans-serif;
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+    .index-nav-bar{
+        display:none;
+    }
     header.index-header{
         .header-text{
             h1{
