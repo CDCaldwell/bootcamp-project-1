@@ -4,9 +4,67 @@ $tertiary:#fdd908;
 $heading-font:'IM Fell English', serif;
 $body-font:'Roboto', sans-serif;
 
+@media (max-width: 1600px) {
+    .left-column{
+        margin-left:5%;
+        top:-15vh;
+        img{
+            position:absolute;
+            display:block;
+            width:100%;
+            right:20%;
+            top:-25px;
+        }
+        .left-column-content{
+            padding-top:75%;
+            width:90%;
+            margin:0 auto;
+            padding-bottom:20px;
+        }
+    }
+}
+
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
-
+    .column-parent{
+        display:flex;
+        position:relative;
+        align-items:center;
+        flex-direction:column;
+    }
+    .left-column{
+        width:90%;
+        margin: 0 auto;
+        top:-10vh;
+        order:2;
+        img{
+            display:none;
+        }
+        .left-column-content{
+            padding-top:0;
+            width:80%;
+            margin:0 auto;
+            padding-bottom:20px;
+            h4{
+                padding-top:20px;
+            }
+        }
+    }
+    .right-column{
+        position:relative;
+        width:90%;
+        margin: 0 auto;
+        flex-basis:2;
+        top:-200px;
+        .right-top-image{
+            box-shadow: -25px 25px $tertiary;
+            position:relative;
+            display:block;
+            object-fit: contain;
+            left:0px;
+            width:100%;
+        }
+    }
 }
 
 /* Landscape phone to portrait tablet */
@@ -15,7 +73,113 @@ $body-font:'Roboto', sans-serif;
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+    .blog-nav-bar{
+        display:none;
+    }
+    .hamburger{
+        display:block;
+    }
+    .right-column{
+        h2{
+            line-height:60px;
+            font-size:45px;
+        }
+        .blog-form{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            .name-and-email{
+                width:100%;
+                display:flex;
+                justify-content: center;
+                flex-direction: column;
+                input{
+                    width:90%;
+                    margin:0 auto;
+                }
+            }
+            #comment-box{
+                width:90%;
+                margin:0 auto;
+                margin-top:20px;
+            }
+            button{
+                width:90%;
+                margin:0 auto;
+                margin-top:20px;
+            }
+        }
+    }
 }
 
 @media (max-width: 320px) {
+    header.blog-header{
+        height:40vh;
+    }
+    .left-column{
+        top:-5vh;
+    }
+    .right-column{
+        top:-100px;
+        h2{
+            padding-top:20px;
+            line-height:42px;
+            font-size:36px;
+        }
+        .right-top-image{
+            box-shadow: -25px 25px $tertiary;
+            position:relative;
+            display:block;
+            object-fit: contain;
+            left:25px;
+        }
+        .blog-post{
+            border-left:$tertiary 10px solid;
+            border-bottom:$tertiary 10px solid;
+            padding: 5px;
+            p{
+                padding-top:10px;
+                padding-bottom:10px;
+            }
+        }
+        .comments{
+            margin-top:50px;
+            padding-left:5px;
+            padding-right:5px;
+            h2{
+                margin-right:0px;
+                text-align: center;
+            }
+            img{
+                display:block;
+                width:75px;
+                height:75px;
+                object-fit: cover;
+                margin-right:0px;
+                margin-bottom:10px;
+            }
+            .comment1{
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction:column;
+                padding-bottom:40px;
+                padding-top:20px;
+                .comment1-content{
+                    padding-left:0px;
+                }
+            }
+            .comment2{
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding-top:40px;
+                padding-bottom:20px;
+                .comment2-content{
+                    padding-left:0px;
+                }
+            }
+        }
+    }
 }

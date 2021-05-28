@@ -4,6 +4,14 @@ $tertiary:#fdd908;
 $heading-font:'IM Fell English', serif;
 $body-font:'Roboto', sans-serif;
 
+
+@media (max-width: 1600px) {
+    header.index-header{
+        img{
+            width:50%;
+        }
+    }
+}
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
     header.index-header{
@@ -16,6 +24,66 @@ $body-font:'Roboto', sans-serif;
             width:50%;
         }
     }
+    .about-us-item{
+        h2{
+            line-height:50px;
+            font-size:30px;
+            padding-top:10px;
+            padding-bottom:10px;
+        }
+    }
+    .section-two{
+        background-color:$secondary;
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        position:relative;
+        img{
+            display:block;
+            width:60%;
+            object-fit: contain;
+        }
+        .left-image{
+            box-shadow: 25px 25px $tertiary;
+            position:relative;
+            top:-30px;
+        }
+        .right-image{
+            box-shadow: -25px 25px $tertiary;
+            position:relative;
+            bottom:-30px;
+        }
+        .section-two-item{
+            display:flex;
+            flex-direction:column;
+            width:100%;
+            justify-content: center;
+            align-items:left;
+            padding:10px 0;
+        }
+        .our-programs{
+            padding-left:10%;
+            padding-right:10%;
+        }
+        .new-locations{
+            text-align: right;
+            padding-left:10%;
+            padding-right:10%;
+            p{
+                text-align:left;
+            }
+            .button{
+                align-self:flex-end;
+            }
+        }
+    }
+    .section-four h2{
+        font-size:45px;
+        line-height:60px;
+        padding-bottom:10px;
+    }
 }
 
 /* Landscape phone to portrait tablet */
@@ -24,7 +92,180 @@ $body-font:'Roboto', sans-serif;
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+    header.index-header{
+        .header-text{
+            h1{
+                font-size:50px;
+                width:100%;
+            }
+        }
+        img{
+            width:100%;
+            bottom:-15vh;
+        }
+    }
+    .about-us{
+        .about-us-flex-parent{
+            display:flex;
+            flex-wrap:wrap;
+            padding-top:20vh;
+            padding-bottom:10vh;
+            // width:100%;
+            // justify-content: center;
+            flex-direction:column;
+            align-items: center;
+            .about-us-item{
+                width:90%;
+                margin-left:50px;
+                position:relative;
+            }
+        }
+    }
+    .section-two{
+        background-color:$secondary;
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        position:relative;
+        img{
+            display:block;
+            width:60%;
+            object-fit: contain;
+        }
+        .left-image{
+            box-shadow: 25px 25px $tertiary;
+            position:relative;
+            top:-30px;
+        }
+        .right-image{
+            box-shadow: -25px 25px $tertiary;
+            position:relative;
+            bottom:-30px;
+        }
+        .section-two-item{
+            display:flex;
+            flex-direction:column;
+            width:100%;
+            justify-content: center;
+            align-items:center;
+            padding:10px 0;
+        }
+        .our-programs{
+            padding-left:10%;
+            padding-right:10%;
+            text-align:center;
+            p{
+                text-align:center;
+            }
+        }
+        .new-locations{
+            text-align: center;
+            padding-left:10%;
+            padding-right:10%;
+            p{
+                text-align:center;
+            }
+            .button{
+                align-self:center;
+            }
+        }
+    }
+    .section-three{
+        .section-three-item{
+            padding-top:5vh;
+            padding-bottom:5vh;
+        }
+    }
+    .section-four{
+        background-color:$primary;
+        .section-four-flex-parent{
+            display:flex;
+            position:relative;
+            align-items: center;
+            justify-content: space-between;
+            img{
+                display:none;
+            }
+            .section-four-item{
+                display:flex;
+                flex-direction:column;
+                margin:0 auto;
+                width:90%;
+                padding-top:5vh;
+                padding-bottom:5vh;
+                text-align:center;
+                .button{
+                    margin: 20px auto;
+                }
+            }
+        }
+    }
+    .gallery{
+        .gallery-item{
+            width:calc(50% - 20px);
+        }
+        .gallery-item-3{
+            display:none;
+        }
+    }
+    footer{
+        .copyright p{
+            font-size:.75rem;
+        }
+    }
 }
 
 @media (max-width: 320px) {
+    header.index-header{
+        height:40vh;
+        .header-text{
+            h1{
+                font-size:36px;
+                width:90%;
+            }
+        }
+        img{
+            width:100%;
+            bottom:-15vh;
+        }
+    }
+    .index-nav-bar{
+        display:none;
+    }
+    .hamburger{
+        display:block;
+    }
+    .about-us{
+        .about-us-flex-parent{
+            .about-us-item{
+                width:80%;
+                margin-left:55px;
+                position:relative;
+            }
+        }
+    }
+    .section-three h2{
+        font-size:45px;
+        line-height:60px;
+        padding-bottom:10px;
+        padding-top:10px;
+    }
+    .canoe-image{
+        display:none;
+    }
+    .section-four h2{
+        font-size:45px;
+        line-height:60px;
+        padding-bottom:10px;
+    }
+    .gallery{
+        .gallery-item{
+            width:calc(100%);
+        }
+        .gallery-item-2{
+            display:none;
+        }
+    }
 }

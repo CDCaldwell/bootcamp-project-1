@@ -310,6 +310,15 @@ h4 {
   text-transform: uppercase;
 }
 
+.hamburger {
+  display: none;
+  color: white;
+  font-size: 2rem;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+}
+
 .index-nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1121,6 +1130,12 @@ footer .copyright p {
   color: #0d457f;
 }
 
+@media (max-width: 1600px) {
+  header.index-header img {
+    width: 50%;
+  }
+}
+
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
   header.index-header .header-text h1 {
@@ -1129,13 +1144,649 @@ footer .copyright p {
   header.index-header img {
     width: 50%;
   }
+  .about-us-item h2 {
+    line-height: 50px;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .section-two {
+    background-color: #0d457f;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .section-two img {
+    display: block;
+    width: 60%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .section-two .left-image {
+    -webkit-box-shadow: 25px 25px #fdd908;
+            box-shadow: 25px 25px #fdd908;
+    position: relative;
+    top: -30px;
+  }
+  .section-two .right-image {
+    -webkit-box-shadow: -25px 25px #fdd908;
+            box-shadow: -25px 25px #fdd908;
+    position: relative;
+    bottom: -30px;
+  }
+  .section-two .section-two-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    padding: 10px 0;
+  }
+  .section-two .our-programs {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .section-two .new-locations {
+    text-align: right;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .section-two .new-locations p {
+    text-align: left;
+  }
+  .section-two .new-locations .button {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .section-four h2 {
+    font-size: 45px;
+    line-height: 60px;
+    padding-bottom: 10px;
+  }
 }
 
 /* Landscape phone to portrait tablet */
 /* Landscape phones and down */
+@media (max-width: 480px) {
+  header.index-header .header-text h1 {
+    font-size: 50px;
+    width: 100%;
+  }
+  header.index-header img {
+    width: 100%;
+    bottom: -15vh;
+  }
+  .about-us .about-us-flex-parent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-us .about-us-flex-parent .about-us-item {
+    width: 90%;
+    margin-left: 50px;
+    position: relative;
+  }
+  .section-two {
+    background-color: #0d457f;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .section-two img {
+    display: block;
+    width: 60%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .section-two .left-image {
+    -webkit-box-shadow: 25px 25px #fdd908;
+            box-shadow: 25px 25px #fdd908;
+    position: relative;
+    top: -30px;
+  }
+  .section-two .right-image {
+    -webkit-box-shadow: -25px 25px #fdd908;
+            box-shadow: -25px 25px #fdd908;
+    position: relative;
+    bottom: -30px;
+  }
+  .section-two .section-two-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 0;
+  }
+  .section-two .our-programs {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+  }
+  .section-two .our-programs p {
+    text-align: center;
+  }
+  .section-two .new-locations {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .section-two .new-locations p {
+    text-align: center;
+  }
+  .section-two .new-locations .button {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .section-three .section-three-item {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+  .section-four {
+    background-color: #EAFEFC;
+  }
+  .section-four .section-four-flex-parent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .section-four .section-four-flex-parent img {
+    display: none;
+  }
+  .section-four .section-four-flex-parent .section-four-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    text-align: center;
+  }
+  .section-four .section-four-flex-parent .section-four-item .button {
+    margin: 20px auto;
+  }
+  .gallery .gallery-item {
+    width: calc(50% - 20px);
+  }
+  .gallery .gallery-item-3 {
+    display: none;
+  }
+  footer .copyright p {
+    font-size: .75rem;
+  }
+}
+
+@media (max-width: 320px) {
+  header.index-header {
+    height: 40vh;
+  }
+  header.index-header .header-text h1 {
+    font-size: 36px;
+    width: 90%;
+  }
+  header.index-header img {
+    width: 100%;
+    bottom: -15vh;
+  }
+  .index-nav-bar {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .about-us .about-us-flex-parent .about-us-item {
+    width: 80%;
+    margin-left: 55px;
+    position: relative;
+  }
+  .section-three h2 {
+    font-size: 45px;
+    line-height: 60px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .canoe-image {
+    display: none;
+  }
+  .section-four h2 {
+    font-size: 45px;
+    line-height: 60px;
+    padding-bottom: 10px;
+  }
+  .gallery .gallery-item {
+    width: calc(100%);
+  }
+  .gallery .gallery-item-2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1600px) {
+  .left-column {
+    margin-left: 5%;
+    top: -15vh;
+  }
+  .left-column img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    right: 20%;
+    top: -25px;
+  }
+  .left-column .left-column-content {
+    padding-top: 75%;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+}
+
 /* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .column-parent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .left-column {
+    width: 90%;
+    margin: 0 auto;
+    top: -10vh;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .left-column img {
+    display: none;
+  }
+  .left-column .left-column-content {
+    padding-top: 0;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  .left-column .left-column-content h4 {
+    padding-top: 20px;
+  }
+  .right-column {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    -ms-flex-preferred-size: 2;
+        flex-basis: 2;
+    top: -200px;
+  }
+  .right-column .right-top-image {
+    -webkit-box-shadow: -25px 25px #fdd908;
+            box-shadow: -25px 25px #fdd908;
+    position: relative;
+    display: block;
+    -o-object-fit: contain;
+       object-fit: contain;
+    left: 0px;
+    width: 100%;
+  }
+}
+
 /* Landscape phone to portrait tablet */
 /* Landscape phones and down */
+@media (max-width: 480px) {
+  .blog-nav-bar {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .right-column h2 {
+    line-height: 60px;
+    font-size: 45px;
+  }
+  .right-column .blog-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .right-column .blog-form .name-and-email {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .right-column .blog-form .name-and-email input {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .right-column .blog-form #comment-box {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .right-column .blog-form button {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  header.blog-header {
+    height: 40vh;
+  }
+  .left-column {
+    top: -5vh;
+  }
+  .right-column {
+    top: -100px;
+  }
+  .right-column h2 {
+    padding-top: 20px;
+    line-height: 42px;
+    font-size: 36px;
+  }
+  .right-column .right-top-image {
+    -webkit-box-shadow: -25px 25px #fdd908;
+            box-shadow: -25px 25px #fdd908;
+    position: relative;
+    display: block;
+    -o-object-fit: contain;
+       object-fit: contain;
+    left: 25px;
+  }
+  .right-column .blog-post {
+    border-left: #fdd908 10px solid;
+    border-bottom: #fdd908 10px solid;
+    padding: 5px;
+  }
+  .right-column .blog-post p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .right-column .comments {
+    margin-top: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .right-column .comments h2 {
+    margin-right: 0px;
+    text-align: center;
+  }
+  .right-column .comments img {
+    display: block;
+    width: 75px;
+    height: 75px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .right-column .comments .comment1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 40px;
+    padding-top: 20px;
+  }
+  .right-column .comments .comment1 .comment1-content {
+    padding-left: 0px;
+  }
+  .right-column .comments .comment2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .right-column .comments .comment2 .comment2-content {
+    padding-left: 0px;
+  }
+}
+
 /* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .contact-main {
+    background-color: #EAFEFC;
+    height: 100vh;
+  }
+  .contact-main .contact-flex-parent {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-main .contact-flex-parent .contact-address {
+    position: relative;
+    top: -75px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .contact-main .contact-flex-parent .contact-form-parent {
+    width: 100%;
+    top: -200px;
+  }
+}
+
 /* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .contact-main {
+    height: 70vh;
+  }
+  .contact-main .contact-flex-parent .contact-form-parent {
+    height: 50vh;
+  }
+  .contact-main .contact-flex-parent .contact-form-parent form .name-and-email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 10%;
+  }
+  .contact-main .contact-flex-parent .contact-form-parent form .name-and-email input {
+    width: 90%;
+  }
+}
+
 /* Landscape phones and down */
+@media (max-width: 480px) {
+  .contact-header {
+    height: 40vh;
+  }
+  .contact-header h1 {
+    padding-top: 15vh;
+  }
+  .contact-nav-bar {
+    display: none;
+  }
+  .contact-main {
+    height: 70vh;
+  }
+  .contact-main .contact-flex-parent .contact-address {
+    position: relative;
+    top: -15px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .contact-main .contact-flex-parent .contact-form-parent {
+    height: 50vh;
+    top: -50px;
+  }
+  .contact-main .contact-flex-parent .contact-form-parent form .name-and-email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 10%;
+  }
+  .contact-main .contact-flex-parent .contact-form-parent form .name-and-email input {
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  .contact-main .contact-flex-parent .contact-form-parent form #message-box {
+    width: 90%;
+    margin: 0 20px;
+    height: 200px;
+    margin-top: 20px;
+  }
+  .contact-main .contact-flex-parent .contact-form-parent form button {
+    width: 90%;
+    margin: 0 20px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .contact-header h1 {
+    padding-top: 15vh;
+    font-size: 46px;
+  }
+  .contact-main {
+    height: 70vh;
+  }
+  .contact-main .contact-flex-parent .contact-address {
+    position: relative;
+    top: -25px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .contact-main .contact-flex-parent .contact-address .address-content address {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

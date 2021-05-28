@@ -6,16 +6,131 @@ $body-font:'Roboto', sans-serif;
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
-
+    .contact-main{
+        background-color:$primary;
+        height:100vh;
+        .contact-flex-parent{
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            .contact-address{
+                position:relative;
+                top:-75px;
+                order:2;
+                padding-top:10px;
+                padding-bottom:10px;
+            }
+            .contact-form-parent{
+                width:100%;
+                top:-200px;
+            }
+        }
+    }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+    .contact-main{
+        height:70vh;
+        .contact-flex-parent{
+            .contact-form-parent{
+                height:50vh;
+                form{
+                    .name-and-email{
+                        display:flex;
+                        justify-content: center;
+                        flex-direction:column;
+                        margin-top:10%;
+                        input{
+                            width:90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+    .contact-header{
+        height:40vh;
+        h1{
+            padding-top:15vh;
+        }
+    }
+    .contact-nav-bar{
+        display:none;
+    }
+    .contact-main{
+        height:70vh;
+        .contact-flex-parent{
+            .contact-address{
+                position:relative;
+                top:-15px;
+                order:2;
+                padding-top:10px;
+                padding-bottom:10px;
+            }
+            .contact-form-parent{
+                height:50vh;
+                top:-50px;
+                form{
+                    .name-and-email{
+                        display:flex;
+                        justify-content: center;
+                        flex-direction:column;
+                        margin-top:10%;
+                        input{
+                            width:90%;
+                            margin-left:20px;
+                            margin-right:10px;
+                            
+                        }
+                    }
+                    #message-box{
+                        width:90%;
+                        margin:0 20px;
+                        height:200px;
+                        margin-top:20px;
+
+                    }
+                    button{
+                        width:90%;
+                        margin:0 20px;
+                        margin-top:20px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 320px) {
+    .contact-header{
+        h1{
+            padding-top:15vh;
+            font-size:46px;
+        }
+    }
+    .contact-main{
+        height:70vh;
+        .contact-flex-parent{
+            .contact-address{
+                position:relative;
+                top:-25px;
+                order:2;
+                padding-top:10px;
+                padding-bottom:10px;
+                .address-content{
+                    address{
+                        font-size:16px;
+                        line-height:22px;
+                    }
+                }
+                
+            }
+        }
+    }
 }
+
