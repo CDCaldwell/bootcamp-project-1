@@ -947,6 +947,23 @@ header.index-header img {
   background-color: #125ead;
 }
 
+.user-comment {
+  display: none;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.user-comment .user-comment-content {
+  padding-left: 20px;
+  width: 100%;
+}
+
 .contact-header {
   height: 85vh;
   background-image: url(./assets/Boat-Ride-Adventures-final-assets/contact-header.jpg);

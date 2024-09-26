@@ -67,16 +67,23 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eos assumenda rerum autem eaque similique nam. Deserunt sunt temporibus quaerat aliquid corporis eveniet reiciendis enim unde sed! Incidunt qui repudiandae ullam quas, laborum culpa nostrum inventore aspernatur nisi sint quam.</p>
                         </div>
                     </div>
+                    <div class="user-comment">
+                        <img src="https://placekitten.com/200/200" alt="A kitten made this comment" class="comment-img">
+                        <div class="user-comment-content">
+                            
+                        </div>
+
+                    </div>
                 </div>
                 <form class="blog-form" action="submit">
                     <div class="name-and-email">
                         <label class="sr-only" for="Name">Name</label>
-                        <input type="text" placeholder="Name" name="Name" id="Name">
+                        <input type="text" placeholder="Name" name="Name" id="Name" autocomplete="off">
                         <label class="sr-only" for="useremail">Email Address</label>
-                        <input type="email" placeholder="Email address" name="email" id="useremail">
+                        <input type="email" placeholder="Email address" name="email" id="useremail" autocomplete="off">
                     </div>
                     <label class="sr-only" for="comment-box">Comment</label>
-                    <textarea type="text" placeholder="Comment" name="comment" id="comment-box" cols="20" rows="10"></textarea>
+                    <textarea type="text" placeholder="Comment" name="comment" id="comment-box" cols="20" rows="10" autocomplete="off"></textarea>
 
                     <button type="submit">Post Comment</button>
                 </form>
@@ -88,5 +95,6 @@
             <p>Copyright © 2019 HackerYou - Recreated by Colin Caldwell</p>
         </div>
     </footer>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
